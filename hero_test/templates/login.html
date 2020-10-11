@@ -1,0 +1,17 @@
+{% extends 'dashboard.html' %}
+{% block title %}Log-in{% endblock %}
+{% block content %}
+    <div align="center">
+        <h1>Log-in</h1>
+        <p>Entre com as credenciais.</p>
+        <form action="" method="post">
+            <div class="form-group">
+                {{ form.as_p }}
+                {% csrf_token %}
+                <div>
+                    <p><input type="submit" value="Log-in">
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

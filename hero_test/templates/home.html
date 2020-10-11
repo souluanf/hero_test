@@ -1,0 +1,8 @@
+{% extends 'dashboard.html' %}
+{% load markdownify %}
+
+{%  block content %}
+    <div id="creatappp" class="card-body">
+        {{ markdowntext|markdownify }}
+    </div>
+{% endblock %}

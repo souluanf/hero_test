@@ -1,0 +1,15 @@
+language: python
+python:
+- 3.8.2
+install:
+- pip install -r requirements.txt
+script:
+- pytest
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  api_key:
+    secure: Fer10TTcLPWcl6nsb8aC4NYX9eAQP0HUkrugatc5zxVJOCBgXWdjSOBwqv3Rr+fy9nTbNG09NY2hP3b6l1Ir8F5aODZohnj3cZGFD+jSVcOjGd/A3pQTZqhdMENNUB6F+gYuWl5h9wd6+ll3LItsCuuhizspdx/pBRxNzaj9XzmYKmQ6duf45J0IhEzAATWVU3AYHmC0D56xB6qmxoLbCJYLP7RBrO8yBASPcCyAK5JqTYDg885QHnkh56jCk8PPugaW1A0eZjRb00RssejeZ349O89753TLmtNrl93uCOF/HbK6lf8X4/PUQsBmTjm0mb25QoBsee5LGbJi1IIzd2VIqmQW2aoaDnzJ+nL9G68O36Zr4mo3Z7owCeTXQ5vQzozgSxaa00QJEmziQq+qdNpJzimCELrzmQetz0IGi42tbqd5Fu7eF2Myz35uEGK6LRZYTjeeYJkxEIpYhlUtcngNfS8cwlenos0zy6njYkUvfqu8Qj/7Qgd0ZbqUlPihWVMHxst5suQ25JhkrurAxeWTpenBeerCQH0LsKB3YgIsby+1/ruKmhBzAxKHFIi+UxhJmFh7Oj/v00sfPhT4OhnbWi+EKGXCI9/QLBBqodODtXy0PMNO+E9LFDoWsCd8YJYGLthk1AyZDlx+mdOvc4i29SgQpXs9emjEjbFvzLc=
+  app: hero_test
+  on:
+    repo: souluanf/hero_test
