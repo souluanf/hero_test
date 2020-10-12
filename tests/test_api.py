@@ -36,18 +36,6 @@ class TestApiDrf(TestCase):
         response = self.client.post(url, data, HTTP_AUTHORIZATION=auth)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
-    # def test_create_employee(self):
-    #     url = reverse('api-root:funcionarios-list')
-    #     data = {
-    #         "full_name": "luan Fernandest",
-    #         "email": "company@hero.com",
-    #         "companies": [1]
-    #     }
-    #
-    #     auth = 'Bearer {0}'.format(self.tokens['access'])
-    #     response = self.client.post(url, data, HTTP_AUTHORIZATION=auth)
-    #     self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-
     def test_get_list_empresas(self):
         url = reverse('api-root:empresas-list')
         auth = 'Bearer {0}'.format(self.tokens['access'])
