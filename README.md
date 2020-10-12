@@ -86,7 +86,7 @@ Then point your browser to localhost:8000
     </thead>
     <tbody>
             <tr>
-                <td class="column1">hero</td>
+                <td class="column1">test@companyhero.com</td>
                 <td class="column2">hero123</td>
             </tr>
     </tbody>
